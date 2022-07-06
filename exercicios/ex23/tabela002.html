@@ -12,6 +12,7 @@
     }
     table{
         width: 600px;
+        position: relative;
     }
     caption{
         font-size: 1em;
@@ -23,6 +24,20 @@
     td, th{
        border: 1px solid black; 
        padding: 10px;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+
+    }
+
+    tbody > tr:nth-child(odd) {
+        background-color: white;
+    }
+
+    tbody > tr:nth-child(2n) {
+        background-color: lightslategray;
     }
 
     td{
@@ -43,19 +58,19 @@
         <caption>Populaço das Unidade Federetivas</caption>
         <thead>
             <tr>
-                <th>Pos.</th>
-                <th>Estado</th>
-                <th>População 2010</th>
-                <th>População 2021</th>
-                <th>Mudança</th>
-                <th>% dapop total</th>
-                <th>Pais Comparavel</th>
+                <th scope="col">Pos.</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População 2010</th>
+                <th scope="col">População 2021</th>
+                <th scope="col">Mudança</th>
+                <th scope="col">% dapop total</th>
+                <th scope="col">Pais Comparavel</th>
 
             </tr>
         </thead>        
         <tfoot>
             <tr>
-                <th colspan="2" >total</th>
+                <th colspan="2" scope="row">total</th>
                 <td><strong>190.755.799</strong></td>
                 <td><strong>213.317.639</strong></td>
                 <td><strong>+11,83%</strong></td>
