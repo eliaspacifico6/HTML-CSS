@@ -1,4 +1,7 @@
+@charset "UTF-8";
+ /* Dispositivos Deitaros */
 
-body{
-    background-color: blue;
+ body{
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
 }
