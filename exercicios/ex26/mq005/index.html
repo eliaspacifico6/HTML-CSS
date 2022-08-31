@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burger" class="material-icons" onclick="clicMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur dolorem veritatis modi, officia, dolor et dolores blanditiis id officiis sint animi nihil quo. Animi quisquam consequuntur dicta explicabo commodi!<br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores officia modi amet minus voluptas quasi, consectetur dignissimos dolore officiis placeat nam at tenetur qui magnam voluptatibus quaerat ex maxime adipisci!
+            </p>
+            <p>
+                Veniam sed voluptates dignissimos omnis ad fuga eaque voluptas rerum porro eveniet ratione delectus ab sint, repellat ipsam asperiores quidem repudiandae harum facilis? Doloribus reiciendis suscipit et culpa debitis numquam?<br>
+                Iure, assumenda voluptas. Inventore harum nemo perspiciatis exercitationem fugiat reprehenderit, sed ad? Doloribus error, necessitatibus, in iure quod dolor laudantium aliquam magnam assumenda dignissimos sunt voluptatibus. Ea unde illo illum.
+            </p>
+            <p>
+                Sequi, doloremque blanditiis. Distinctio corporis delectus sapiente veritatis, laborum aspernatur sit corrupti iusto ab veniam ullam molestiae reiciendis quis. Hic magni quam quisquam ex nobis veniam, blanditiis voluptates repudiandae a!<br>
+                Officia reprehenderit quos est, temporibus quidem quasi accusamus, nisi suscipit assumenda fugit atque doloribus impedit natus soluta quaerat pariatur in earum perspiciatis! Vero magnam delectus laborum repellat debitis maxime autem.
+            </p>
+        </article>
+    </main>
+    <script>
+        function clicMenu(){
+           if  (itens.style.display == 'block') {
+                itens.style.display = 'none'
+           } else {
+             itens.style.display = 'block'
+           }
+            
+        }
+    </script>
+</body>
+</html>
